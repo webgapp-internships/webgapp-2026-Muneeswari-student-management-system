@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+</head>
+
+<body>
+<center>
+       <nav>
+        <a href="/">Home</a>
+          &nbsp; &nbsp; &nbsp;
+        <a href="/about/">About</a>
+          &nbsp; &nbsp; &nbsp;
+        <a href="/contact/">Contact</a>
+          &nbsp; &nbsp; &nbsp;
+        <a href="/table/">Table</a>
+         &nbsp; &nbsp; &nbsp;
+        <a href="/testing/">testing</a>
+    </nav>
+</center>
+<br>
+    <center>
+    <h2>Registration Form</h2>
+   
+    <br>
+    
+    <form>
+<div>
+    <label>Name:</label><br>
+    <input type="text" name="name" placeholder="Enter your name" ><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" name="password" placeholder="Enter password" ><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" placeholder="Enter your email"><br><br>
+
+    <label>Register Number:</label><br>
+    <input type="number" name="regno" placeholder="Enter register number"><br><br>
+
+    <label>Phone Number:</label><br>
+    <input type="tel" name="phone" placeholder="Enter phone number"><br><br>
+
+    <label>Date of birth:</label><br>
+    <input type="date" name="date"><br><br>
+
+    <label>Time:</label><br>
+    <input type="time" name="time"><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female<br><br>
+
+    <label>Skills:</label><br>
+    <input type="checkbox"> HTML
+    <input type="checkbox"> CSS
+    <input type="checkbox"> Python
+    <input type="checkbox"> java
+    <input type="checkbox"> c
+    <input type="checkbox"> js
+    <input type="checkbox"> c++
+    <input type="checkbox"> sql
+    <br><br>
+
+    <label>Address:</label><br>
+    <textarea rows="4" cols="30" placeholder="Enter address"></textarea><br><br>
+
+    <label>Year:</label><br>
+    <input list="year">
+
+    <datalist id="year">
+        <option value="1st Year">
+        <option value="2nd Year">
+        <option value="3rd Year">
+    </datalist><br><br>
+
+    <label>Choose Color:</label><br>
+    <input type="color"><br><br>
+
+    <label>Rate My Website:</label><br>
+    <input type="range" min="1" max="10"><br><br>
+
+    <input type="submit" value="Submit">
+ &nbsp; &nbsp; &nbsp;
+    <input type="reset" value="Reset">
+</div>
+</form><br>
+</center>
+    
+     <a href="/">Home Page</a>
+
+</body>
+</html>
