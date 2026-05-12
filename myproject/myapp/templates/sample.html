@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Unique Tags</title>
+
+    <link rel="stylesheet" href="{% static 'css/sample.css' %}">
+
+    </head>
+
+    <body>
+
+    <header>
+        <h1>Modern Website</h1>
+    </header>
+
+    <main>
+
+        <section class="card">
+
+            <figure>
+
+                <img src="{% static 'image/pic.jpg' %}">
+
+                <figcaption>Beautiful Nature Image</figcaption>
+
+            </figure>
+
+            <article>
+
+                <h2>Future Technology</h2>
+
+                <p>
+                    Technology makes life easier and smarter.
+                </p>
+            </article>
+
+            <details>
+
+                <summary>More Information</summary>
+
+                <p>
+                    This text opens automatically.
+                </p>
+
+            </details>
+
+            <progress value="50" max="100"></progress>
+
+            <br><br>
+
+            <button>Explore</button>
+
+        </section>
+        
+        <aside>
+       <div class="right">
+
+    <h1>Nature Video</h1>
+
+    <video width="500" controls>
+
+        <source src="{% static 'video/video.mp4' %}">
+
+    </video>
+
+    <p>
+        Beautiful nature video section.
+    </p>
+
+    </div>
+
+    </main>
+    </aside>
+
+    <footer>
+       <p> © 2026 Modern Page</p>
+
+    </footer>
+
+</body>
+
+</html>

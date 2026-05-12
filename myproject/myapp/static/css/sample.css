@@ -1,0 +1,72 @@
+body{
+    background:linear-gradient(to right, #ffdde1, #c2e9fb);
+    display:grid;
+    place-items:center;
+    font-family:Arial;
+    color:rgb(170, 92, 92);
+}
+
+header{
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+main{
+    display:flex;
+    gap:45px;
+    margin-top:30px;
+}
+
+.card{
+    width:350px;
+    padding:25px;
+    background:rgba(195, 158, 158, 0.1);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    box-shadow:0px 0px 20px rgb(197, 99, 43);
+    text-align:center;
+}
+
+img{
+    width:100%;
+    border-radius:15px;
+    object-fit:cover;
+    filter:brightness(120%);
+}
+
+figcaption{
+    margin-top:10px;
+    color:rgb(5, 5, 4);
+}
+
+summary{
+    cursor:pointer;
+    color:rgb(171, 66, 77);
+}
+
+progress{
+    width:200px;
+    accent-color:lime;
+}
+
+button{
+    padding:10px 20px;
+    background-color: brown;
+    border-radius: 10px;
+    transition:0.5s;
+}
+
+button:hover{
+    transform:scale(1.1) rotate(3deg);
+}
+ 
+.right video{
+    height: 400px;
+    width: 400px;
+    border-radius:20px;
+    box-shadow:0px 0px 10px gray;
+}
+footer{
+    margin-top:30px;
+    opacity:0.5;
+}
