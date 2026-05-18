@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+
+body{
+    background-color: #e0b0c3;
+    font-family: Arial;
+}
+
+h1{
+    color: darkblue;
+    font-family:cursive;
+    font-size: 40px;
+}
+
+table{
+    width: 90%;
+    background-color: white;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px gray;
+}
+
+th{
+    background-color: royalblue;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+td{
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+    <center>
+    <h1>Student details</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Register Number</th>
+            <th>Age</th>
+            <th>DOB</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Action</th>
+             <th>Action</th>
+        </tr>
+
+        {% for i in result %}
+       
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.regno}}</td>
+            <td>{{i.age}}</td>
+            <td>{{i.dob}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.phone}}</td>
+             <td>
+                 <a href="{% url 'form_edit' i.id %}" class="btn btn-primary btn-edit">Edit
+              </a>
+    </td>
+        <td>
+                 <a href="{% url 'form_delete' i.id %}" class="btn btn-primary btn-edit">Delete
+              </a>
+    </td>
+        </tr>
+        
+        {% endfor %}
+
+    </table>
+    </center>
+</body>
+</html>
