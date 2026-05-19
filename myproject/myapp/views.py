@@ -36,6 +36,20 @@ def newabout(request):
 def newservices(request):
     return render(request, 'newservices.html')
 
+def web(request):
+    return render(request, 'web.html')
+
+def collections(request):
+    return render(request,'collections.html')
+
+
+def gallery(request):
+    return render(request,'gallery.html')
+
+def contactin(request):
+    return render(request,'contactin.html')
+
+
 def form(request):
     if request.method == 'POST':
         name=request.POST.get('name')
@@ -83,16 +97,3 @@ def form_delete(request,id):
     delete = Forms.objects.filter(id=id)
     delete.delete()
     return redirect("form_result")
-
-def web(request):
-    return render(request, 'web.html')
-
-def collections(request):
-    return render(request,'collections.html')
-
-
-def gallery(request):
-    return render(request,'gallery.html')
-
-def contactin(request):
-    return render(request,'contactin.html')
